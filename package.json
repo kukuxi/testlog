@@ -1,10 +1,11 @@
 {
   "name": "test",
-  "version": "1.0.7-alpha.0",
+  "version": "1.0.7-alpha.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prerelease": "standard-version --prerelease alpha"
+    "prerelease": "standard-version --prerelease alpha && yarn update-npm-and-git",
+    "update-npm-and-git": "git push origin HEAD"
   },
   "devDependencies": {
     "standard-version": "^8.0.2"
